@@ -110,9 +110,12 @@ watch(
 }
 
 .question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 15px;
-  min-height: 35px;
-  padding: 20px 15px;
+  min-height: 120px;
+  padding: 0 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

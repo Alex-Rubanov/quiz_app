@@ -44,14 +44,6 @@ watch(
   margin: 25px auto;
   width: 100%;
 }
-input[type='radio'] {
-  display: none;
-}
-
-input[type='radio']:checked + label {
-  border: none;
-  outline: 3px solid #4ab84f;
-}
 
 label {
   display: flex;
@@ -65,6 +57,16 @@ label {
   padding: 5px;
   border: 1px solid #000;
   border-radius: 7px;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + label {
+  border: none;
+  outline-offset: 5px;
+  outline: 2px solid #4ab84f;
 }
 
 label:hover {
