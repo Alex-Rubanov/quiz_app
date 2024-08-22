@@ -8,7 +8,7 @@ export function useTimer(deadline: number = 60000) {
   const timer = ref(deadline)
   const start = ref(Date.now())
 
-  let timerId: string | number | NodeJS.Timeout | undefined
+  let timerId: ReturnType<typeof setInterval>
 
   const quiz = useQuizStore()
 

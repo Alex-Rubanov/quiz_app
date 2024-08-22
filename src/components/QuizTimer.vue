@@ -6,7 +6,8 @@ import { TIME_PER_QUESTION } from '@/constants'
 
 const quiz = useQuizStore()
 
-const timerDeadline =
+let timerDeadline =
+  // @ts-ignore comment
   quiz.state.settings.amount * TIME_PER_QUESTION[quiz.state.settings.difficulty] * 1000
 
 const { timer } = useTimer(timerDeadline)

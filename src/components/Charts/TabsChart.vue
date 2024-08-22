@@ -35,5 +35,5 @@ const options = {
 </script>
 
 <template>
-  <Bar :data="data" :options="options" />
+  <Bar :data="data as any" :options="options" />
 </template>

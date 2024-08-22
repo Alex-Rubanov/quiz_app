@@ -23,7 +23,7 @@ defineProps<{
     <select
       :id="id"
       :name="name"
-      @change="(event: Event) => $emit('onChange', event.target?.value)"
+      @change="(event: Event) => $emit('onChange', (event.target as HTMLInputElement).value)"
     >
       <option disabled value="" selected>{{ defaultValue }}</option>
 
